@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+button{
+
+}
+body{
+	background-color: black;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+h1{
+	text-align: center;
+}
+header{
+	position: fixed;
+	text-align: center;
+	flex-wrap: nowrap;
+	padding-left: .6em;
+	padding-right: 1em;
+	
+
+
+}
+footer{
+	padding: 1em;
+	font-style: italic;
+	text-align: center;
+	background-color: gray;
+}
+#menu{
+	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+	right: 5%;
+}
+header,h1{
+	padding-left: 1em;
+	font-size: 1.1em;
+	padding-top: 1em;
+	padding-bottom: .01em;
+}
+
+
+#logo{
+	position: absolute;
+	left: 2%;
+	top: 1%;
+}
+
+#mainframe{
+	border-bottom: solid white .099em;
+	height: 100%;
+	padding-top: 4.5em;
+	padding-bottom: 6em;
+	font-size: 3em;
+	width: 100%;
+	background-image: url("Images/mainImage.jpg");
+	background-size: cover;
+}
+
+#homeAbout{
+	font-size: 1.3em;
+	padding: 2em 20% 4em 20%;
+	text-align: left;
+	color: black;
+	background-color: white;
+}
+#homeAbout h1{
+	padding-bottom: .8em;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+#buttons{
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	flex-wrap: wrap;
+	margin-top: -.5em;
+
+}
+#buttons li{
+	list-style: none;
+	color: white;
+	text-decoration: none;
+	margin-left: .5em;
+	display: inline-block;
+	padding: .1em.65em .1em 0.85em;
+	text-decoration: none;
+	border: .05em solid white;
+	background-color: rgba(255,255,255,0.2);
+	font-size: .4em;
+
+}
+#buttons li:hover{
+	background-color: rgba(255,255,255,0.6);
+}
+#buttons li+li{
+	margin-left: -.5em;
+}
+#homeAbout{
+	background: linear-gradient(
+      rgba(255, 255, 255, 0.75), 
+      rgba(255, 255, 255, 0.75)
+      ),
+      url("Images/abstract.jpg");
+      background-attachment: fixed;
+    
+	background-size: cover;
+}
+#sideNav{
+	display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+	#menu{
+		display: none;
+	}
+	#sideNav{
+		display: inline;
+		height: 100%;
+		width: 0em;
+		background-color: rgba(219, 219, 219, 0.93);
+		position: fixed;
+		top: 0;
+		right: 0;
+		overflow-x: hidden;
+	
+	}
+	#sideNav a{
+		color: black;
+		display: block;
+		padding: 1.3em;
+		font-size: 1.3em;
+		border: solid black;
+		border-width: 1px 0px 0px;
+	}
+	#sideNav a:hover{
+		background-color: darkgrey;
+	}
+	#but{
+		padding:1em;
+		position:relative;
+		right: 7.5em;
+		background-color: rgba(219, 219, 219, 0.0);
+		box-shadow: none;
+		-webkit-appearance: none;
+		border-color: none;
+		border-style: none;
+		border-image: none;
+	}
+	#but:hover{
+		cursor: pointer;
+	}
+	#menuBurger{
+		display: inline;
+		position: absolute;
+		top: .5em;
+		right:1em;
+		padding: .3em;
+	}
+	#menuBurger:hover{
+		cursor: pointer;
+	}
+	
+}

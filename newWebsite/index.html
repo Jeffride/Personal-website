@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(window).scroll(function() {
+    	var topScroll = $(this).scrollTop();
+
+        $('#logo').css({
+        opacity: function() {
+            var eHeight = $(this).height(),
+            //opacity = ((eHeight - topScroll) / eHeight);
+            return opacity;
+        }
+    });
+});
+		function show() {
+			var x = document.getElementById("sideNav");
+			x.style.width = "0em";
+		}
+		function showMen(){
+			var y = document.getElementById("sideNav");
+			y.style.width = "20em";
+		}
+		
+	</script>
+
+	<title>Jeff</title>
+</head>
+<body>
+	<header>
+		<img src="Images/logo.png" id ="logo" alt="A logo depicting the initials JA in white">
+	</header>
+	<img src="Images/burger.png" id="menuBurger" onclick="showMen()">
+	<div>
+	<ul id="menu">
+		<h1>Home</h1>
+		<h1>About</h1>
+		<h1>Contact</h1>
+		<h1>CV</h1>
+	</ul>
+	</div>
+	<div id="sideNav">
+		<button onclick="show()" id="but"><img src="Images/x.png"></button>
+		
+		<a href="">Home</a>
+		<a href="#homeAbout">About</a>
+		<a href="">Contact</a>
+		<a href="">CV</a>
+	</div>
+	<div id="mainframe">
+		<h1>DEVELOPER.</h1>
+		<ul id="buttons">
+			<a href="homeAbout">
+				<li id="abt">
+					About
+				</li>
+				</a>
+			<li>Contact</li>
+		</ul>
+	</div>
+	<div id="homeAbout">
+	<h1>About</h1>
+	<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</p>
+	</div>
+	<footer>
+		created by Jeff Attride 2020
+	</footer>
+</body>
+</html>
